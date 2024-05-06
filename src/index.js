@@ -36,7 +36,7 @@ fastify.register(import('@fastify/static'), {
 });
 
 fastify.get('/', (req, res) => {
-  res.send({ text: 'hello world' });
+  res.redirect('/platform/detail?id=argasari');
 });
 
 // Register all routes
