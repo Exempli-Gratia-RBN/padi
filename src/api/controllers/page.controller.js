@@ -1,4 +1,4 @@
-import { getDb } from '../configs/database';
+import { getDb } from '../configs/database.js';
 
 export default {
   payment: async (req, res) => {

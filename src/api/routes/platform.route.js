@@ -1,5 +1,5 @@
-import controller from '../controllers/platform.controller';
-import { platformSchema } from '../middlewares/validation.middleware';
+import controller from '../controllers/platform.controller.js';
+import { platformSchema } from '../middlewares/validation.middleware.js';
 
 // module.export = async function (fastify, opts) { equivalent
 export default function (fastify, opts, done) {

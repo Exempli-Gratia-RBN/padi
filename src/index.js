@@ -4,9 +4,9 @@ import { fileURLToPath } from 'url';
 import Fastify from 'fastify';
 import ejs from 'ejs';
 
-import GLOBAL from './variables';
-import { connect } from './api/configs/database';
-import './api/services/net.service';
+import GLOBAL from './variables.js';
+import { connect } from './api/configs/database.js';
+import './api/services/net.service.js';
 
 await connect();
 
@@ -41,7 +41,7 @@ fastify.get('/', (req, res) => {
 
 // Register all routes
 for (const route of GLOBAL.ROUTES) {
-  fastify.register(import(`./api/routes/${route}.route`), {
+  fastify.register(import(`./api/routes/${route}.route.js`), {
     prefix: route === 'page' ? '/' : `/api/${route}`,
   });
 }

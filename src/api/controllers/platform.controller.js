@@ -2,7 +2,7 @@ import { ObjectId } from 'mongodb';
 import { v4 as uuidv4 } from 'uuid';
 import qrcode from 'qrcode';
 
-import { getDb } from '../configs/database';
+import { getDb } from '../configs/database.js';
 
 /**
  * FIelds:

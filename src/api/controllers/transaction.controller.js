@@ -1,7 +1,7 @@
 import { ObjectId } from 'mongodb';
-import { getDb } from '../configs/database';
-import { createPayment } from '../services/xendit.service';
-import { generateRef } from '../utils/helpers';
+import { getDb } from '../configs/database.js';
+import { createPayment } from '../services/xendit.service.js';
+import { generateRef } from '../utils/helpers.js';
 
 /**
  * Fields:

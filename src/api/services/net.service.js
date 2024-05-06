@@ -1,7 +1,7 @@
 import { ObjectId } from 'mongodb';
 import net from 'net';
 
-import { getDb } from '../configs/database';
+import { getDb } from '../configs/database.js';
 
 let clients = [];
 
@@ -86,6 +86,6 @@ const server = net.createServer((socket) => {
   });
 });
 
-server.listen(3001, () => {
+server.listen(2001, () => {
   console.log('Net Server listening on port 3000');
 });

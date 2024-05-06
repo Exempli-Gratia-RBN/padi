@@ -1,8 +1,8 @@
-import controller from '../controllers/transaction.controller';
+import controller from '../controllers/transaction.controller.js';
 import {
   transactionCallbackSchema,
   transactionSchema,
-} from '../middlewares/validation.middleware';
+} from '../middlewares/validation.middleware.js';
 
 export default function (fastify, opts, done) {
   fastify.post(

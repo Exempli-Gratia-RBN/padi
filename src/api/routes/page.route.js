@@ -1,6 +1,5 @@
-import platformController from '../controllers/platform.controller';
-import transactionController from '../controllers/transaction.controller';
-import page from '../controllers/page.controller';
+import platformController from '../controllers/platform.controller.js';
+import page from '../controllers/page.controller.js';
 
 // module.export = async function (fastify, opts) { equivalent
 export default function (fastify, opts, done) {
