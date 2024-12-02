@@ -1,5 +1,5 @@
 import { MongoClient } from "mongodb";
-require("dotenv").config();
+import "dotenv/config";
 
 const client = new MongoClient(process.env.MONGODB_URI);
 const dbName = "padi";
